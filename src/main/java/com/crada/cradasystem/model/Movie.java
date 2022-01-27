@@ -15,7 +15,7 @@ public class Movie {
     private String image;
     private String director;
     private int score;
-    private String gender;
+    private String genre;
 
     public Movie() {
 
@@ -61,12 +61,12 @@ public class Movie {
         this.score = score;
     }
 
-    public String getGender() {
-        return gender;
+    public String getGenre() {
+        return genre;
     }
 
-    public void setGender(String gender) {
-        this.gender = gender;
+    public void setGenre(String genre) {
+        this.genre = genre;
     }
 }
 

@@ -9,6 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/movies")
+@CrossOrigin
 public class MovieController {
     @Autowired
     private MovieService movieService;
@@ -18,6 +19,7 @@ public class MovieController {
         movieService.saveMovie(movie);
         return "new movie is added";
     }
+
     @GetMapping
     public List<Movie> getAllMovies(){
         return movieService.getAllMovies();
