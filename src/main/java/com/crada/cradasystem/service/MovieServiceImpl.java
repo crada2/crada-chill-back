@@ -24,11 +24,11 @@ public class MovieServiceImpl implements MovieService{
         return movieRepository.findAll();
     }
 
-
-@Override
-public Movie get(Integer id) {
+    @Override
+    public Movie get(Integer id) {
     return movieRepository.findById(id).get();
-}
+    }
+
     @Override
     public Movie save(Movie movie) {
         return movieRepository.save(movie);
@@ -38,7 +38,4 @@ public Movie get(Integer id) {
     public void delete (Integer id){
         movieRepository.deleteById(id);
     }
-
-
-
 }

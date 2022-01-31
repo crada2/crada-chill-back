@@ -30,7 +30,6 @@ public class MovieController
         return movieService.getAllMovies();
     }
 
-
      @GetMapping("/{id}")
          public ResponseEntity<Movie> get(@PathVariable Integer id)
      {
@@ -56,7 +55,7 @@ public class MovieController
     @DeleteMapping("/{id}")
     public String delete(@PathVariable Integer id){
         movieService.delete(id);
-        return "Se eliminó la película con id: "+id;
+        return "Removed movie with id: "+id;
     }
 
 }
