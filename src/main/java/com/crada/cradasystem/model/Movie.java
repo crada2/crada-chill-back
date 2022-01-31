@@ -68,5 +68,6 @@ public class Movie {
     public void setGenre(String genre) {
         this.genre = genre;
     }
+
 }
 

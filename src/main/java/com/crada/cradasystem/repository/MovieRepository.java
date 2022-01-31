@@ -8,3 +8,4 @@ import org.springframework.stereotype.Repository;
 public interface MovieRepository extends JpaRepository <Movie,Integer>{
 
 }
+//si hay mas repositorios hay que decir cual quieres que se implemente
